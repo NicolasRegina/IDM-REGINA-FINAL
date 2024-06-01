@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RegiSano - Tu Cocinero Personal</title>
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FONTS GOOGLE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="img/logo-regisano.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top rounded-bottom">
+      <div class="container">
+        <a class="navbar-brand font-zero" href="#">
+          <img src="img/logo-regisano.png" alt="Logo RegiSano" width="50" height="50">
+          RegiSano
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav" aria-controls="topnav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center" id="topnav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#platos">Platos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <header class="header-section">
+      <h1 class="font-zero">RegiSano</h1>
+      <div id="carouselSlidesHeader" class="carousel slide" data-bs-ride="carousel">
+      <!-- <div id="carouselSlidesHeader" class="carousel slide" data-bs-ride="true"> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carrousel_1.jpg" class="d-block w-100" alt="imagen de carrousel 1">
+            <div class="carousel-caption text-start carousel-position">
+              <span>De la cocina</span>
+              <p>Los platos mas variados y a la mejor calidad</p>
+              <a class="btn btn-primary" href="#nosotros" role="button">Conócenos</a>
+            </div>            
+          </div>
+          <div class="carousel-item">
+            <img src="img/carrousel_2.jpg" class="d-block w-100" alt="imagen de carrousel 2">
+            <div class="carousel-caption text-start carousel-position">
+              <span>A tu casa</span>
+              <p>La mejor selección en la comodidad de tu casa.</p>
+              <a class="btn btn-primary" href="#nosotros" role="button">Conócenos</a>
+            </div>            
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselSlidesHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Conocenos 1"></button>
+          <button type="button" data-bs-target="#carouselSlidesHeader" data-bs-slide-to="1" aria-label="Conocenos 2"></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION NOSOTROS -->
+    <section id="nosotros" class="section">
+      <div class="p-4 bg-body-tertiary rounded-3">
+        <div class="container pt-5 pb-2 nos-container">
+          <h2 class="display-6">Por que <span class="green-color signature">Regi</span>sano?</h2>
+          <div class="row nos-flex my-5">
+            <p class="col-md-4 fs-4 nos-p">Somos una empresa de venta de viandas saludables para todo tipo de personas: adultos mayores, deportistas, niños, personas con enfermedades nutricionales, etc.</p>
+            <p class="col-md-4 fs-4 nos-p">Nuestro emprendimiento está dirigido a <strong class="green-color">todos</strong>, pero si no te gusta cocinar, no tienes tiempo o no sabes cómo alimentarte correctamente, ¡te vas a enamorar de nosotros!</p>
+          </div>
+          <p class="my-0 nos-btn"><a class="btn btn-primary" style="width: inherit;" href="#contacto" role="button">Contacta con nosotros</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PLATOS -->
+    <section id="platos" class="section">
+      <div class="p-4 bg-body-tertiary rounded-3">
+        <div class="container pt-5 pb-2 nos-container">
+          <h2 class="display-6">Nuestros Platos</h2>
+          <div class="row nos-flex my-5">
+            <p class="col-md-8 fs-4">La mayor variedad de productos y los mas frescos platos están en <span class="green-color">Regi</span>sano</p>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <img src="img/productos/cane-espinaca.jpg" class="card-img-top" alt="plato de canelones con espinaca">
+                </a>
+                  <div class="card-body">
+                    <p class="card-title">Canelones de Espinaca</p>
+                    <p class="card-text">$2960.00</p>
+                  </div>
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card-footer background-green">
+                    <small class="text-body-secondary"><strong>Agregar al carrito</strong></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <img src="img/productos/hamburguesa.jpg" class="card-img-top" alt="hamburguesas de pollo">
+                </a>
+                  <div class="card-body">
+                    <p class="card-title">Hamburguesas de pollo</p>
+                    <p class="card-text">$2272.00</p>
+                  </div>
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card-footer background-green">
+                    <small class="text-body-secondary"><strong>Agregar al carrito</strong></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <img src="img/productos/lasagna.jpg" class="card-img-top" alt="plato de lasagna">
+                </a>
+                  <div class="card-body">
+                    <p class="card-title">Lasaña con ricota, pollo, espinaca y fileto</p>
+                    <p class="card-text">$2960.00</p>
+                  </div>
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card-footer background-green">
+                    <small class="text-body-secondary"><strong>Agregar al carrito</strong></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <img src="img/productos/pechuga.jpg" class="card-img-top" alt="plato de pechuga al verdeo">
+                </a>
+                  <div class="card-body">
+                    <p class="card-title">Pechuga al Verdeo con papas</p>
+                    <p class="card-text">$2960.00</p>
+                  </div>
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card-footer background-green">
+                    <small class="text-body-secondary"><strong>Agregar al carrito</strong></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <img src="img/productos/ravioles-calabaza.jpg" class="card-img-top" alt="Ravioles de Calavaza">
+                </a>
+                  <div class="card-body">
+                    <p class="card-title">Ravioles de Calabaza</p>
+                    <br>
+                    <p class="card-text">$2120.00</p>
+                  </div>
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card-footer background-green">
+                    <small class="text-body-secondary"><strong>Agregar al carrito</strong></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <img src="img/productos/ravioles-espinaca.jpg" class="card-img-top" alt="Ravioles de Espinaca">
+                </a>
+                  <div class="card-body">
+                    <p class="card-title">Ravioles de Espinaca</p>
+                    <br>
+                    <p class="card-text">$2120.00</p>
+                  </div>
+                <a href="detalle_producto.html" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                  <div class="card-footer background-green">
+                    <small class="text-body-secondary"><strong>Agregar al carrito</strong></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TESTIMONIOS -->
+    <section id="testimonios" class="section">
+      <div class="p-4 bg-body-tertiary rounded-3">
+        <div class="container pt-5 pb-2 nos-container">
+          <h2 class="display-6 sm-h2">Testimonios</h2>
+          <div class="card-container mt-5">
+            <div class="card test-width mb-5">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img class="img-fluid test-img" src="img/testimonios/juan.jpg" alt="foto de Juan Ignacio">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <strong class="card-title">Juan Ignacio (28) - Analista de Sistemas</strong>
+                    <p class="card-text">No me gusta cocinar y la verdad, si lo hago no se me ocurren opciones saludables, por lo que <strong>Regisano me ha sacado de apuros</strong> mas de una vez!. Son mis nuevos aliados"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card test-width mb-5">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img class="img-fluid test-img" src="img/testimonios/maria.jpg" alt="foto de Maria Laura">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <strong class="card-title">Maria Laura (35) - Enfermera</strong>
+                    <p class="card-text">"Soy enfermera y la verdad que las jornadas largas de trabajo me dejan sin ganas de hacer alguna comida cuando llego a casa, por lo que tener el freezer lleno de viandas <strong>me facilita la vida</strong>."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="p-4 bg-body-tertiary rounded-3">
+        <div class="container pt-5 pb-2 nos-container">
+          <h2 class="display-6 sm-h2 mb-4">Contacto</h2>
+          <form method="post" action="/enviar_formulario.php" name="formulario_contacto">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="nombre" name="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="celular" name="cell" placeholder="Ingrese su número de teléfono">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="mail" placeholder="Ingrese su email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="consulta" rows="3" name="textArea" placeholder="Ingrese su consulta" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary rounded-3" data-bs-theme="dark">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="img-footer" src="img/nicolas_low.jpg" alt="Nicolás Regina">
+          </div>
+          <div class="col-md-3">
+            <h3>Sobre mi</h3>
+            <p>Nicolás Regina</p>
+            <p>Edad: 31</p>
+            <p>Email: nicojregina@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Enlaces Rápidos</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#platos">Platos</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-0 col-md-3">
+            <h3>Redes Sociales</h3>
+            <ul class="list-unstyled">
+              <li><a href="https://www.linkedin.com/in/nicolas-regina/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://twitter.com/NicoJRegina" target="_blank">Twitter</a></li>
+              <li><a href="https://www.instagram.com/nicosmicus/" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">Nicolás Regina - [DWN2BV] Interacción con Dispositivos Móviles</p>
+      </div>
+    </footer>
+  </body>
+</html>
